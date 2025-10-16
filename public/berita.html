@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berita - Diskominfo Kota Pekanbaru</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-gray-50">
+
+<!-- HEADER UNTUK HALAMAN DI FOLDER UTAMA -->
+<header class="bg-[#003E54] text-white shadow-md sticky top-0 z-50">
+    <!-- Ornamen Border Atas -->
+    <div class="ornament-border"></div>
+
+    <div class="container mx-auto px-6 py-2 flex justify-between items-center">
+        <a href="index.html" class="flex items-center space-x-4">
+            <img src="assets/images/logo.png" alt="Logo" class="h-12 w-12" onerror="this.onerror=null;this.src='https://placehold.co/48x48/003E54/FFFFFF?text=Logo';">
+            <div class="hidden md:block">
+                <p class="font-semibold text-sm leading-tight">Dinas Komunikasi Informatika Statistik dan Persandian</p>
+                <p class="text-xs leading-tight">Pemerintah Kota Pekanbaru</p>
+            </div>
+        </a>
+        <nav class="hidden md:flex items-center space-x-6 text-sm">
+            <a href="index.html" class="hover:text-yellow-400 transition duration-300">Beranda</a>
+            <div class="relative" id="profil-dropdown-container">
+                <button id="profile-dropdown-button" class="hover:text-yellow-400 transition duration-300 flex items-center">
+                    Profil
+                    <i class="fas fa-chevron-down ml-2 text-xs"></i>
+                </button>
+                <div id="profile-dropdown-menu" class="absolute right-0 mt-2 w-56 bg-white rounded-md shadow-lg py-2 z-20 hidden">
+                    <a href="profil-pages/sejarah.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Sejarah</a>
+                    <a href="profil-pages/visi-misi.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Visi & Misi</a>
+                    <a href="profil-pages/struktur-organisasi.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Struktur Organisasi</a>
+                    <a href="profil-pages/tugas-fungsi.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Tugas & Fungsi</a>
+                </div>
+            </div>
+            <a href="berita.html" class="hover:text-yellow-400 transition duration-300">Berita</a>
+            <div class="relative" id="galeri-dropdown-container">
+                <button id="galeri-dropdown-button" class="hover:text-yellow-400 transition duration-300 flex items-center">
+                    Galeri
+                    <i class="fas fa-chevron-down ml-2 text-xs"></i>
+                </button>
+                <div id="galeri-dropdown-menu" class="absolute right-0 mt-2 w-56 bg-white rounded-md shadow-lg py-2 z-20 hidden">
+                    <a href="galeri.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Galeri Foto</a>
+                    <a href="galeri-pages/video.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Galeri Video</a>
+                </div>
+            </div>
+            <a href="kontak.html" class="hover:text-yellow-400 transition duration-300">Kontak</a>
+        </nav>
+        <div class="md:hidden">
+            <button id="mobile-menu-button" class="focus:outline-none">
+                <i class="fas fa-bars fa-lg"></i>
+            </button>
+        </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-[#003E54] px-6 pb-4">
+        <a href="index.html" class="block py-2 hover:text-yellow-400">Beranda</a>
+        <span class="block py-2 text-yellow-400 font-bold">Profil</span>
+        <a href="profil-pages/sejarah.html" class="block py-2 pl-4 text-sm hover:text-yellow-400">Sejarah</a>
+        <a href="profil-pages/visi-misi.html" class="block py-2 pl-4 text-sm hover:text-yellow-400">Visi & Misi</a>
+        <a href="profil-pages/struktur-organisasi.html" class="block py-2 pl-4 text-sm hover:text-yellow-400">Struktur Organisasi</a>
+        <a href="profil-pages/tugas-fungsi.html" class="block py-2 pl-4 text-sm hover:text-yellow-400">Tugas & Fungsi</a>
+        <a href="berita.html" class="block py-2 hover:text-yellow-400">Berita</a>
+        <span class="block py-2 text-yellow-400 font-bold">Galeri</span>
+        <a href="galeri.html" class="block py-2 pl-4 text-sm hover:text-yellow-400">Galeri Foto</a>
+        <a href="galeri-pages/video.html" class="block py-2 pl-4 text-sm hover:text-yellow-400">Galeri Video</a>
+        <a href="kontak.html" class="block py-2 hover:text-yellow-400">Kontak</a>
+    </div>
+</header>
+
+
+
+
+<main class="py-16">
+    <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-12 title-underline">
+            <h2 class="text-3xl font-bold text-gray-800">Berita & Artikel</h2>
+            <p class="text-gray-600 mt-2">Informasi dan kegiatan terkini dari Diskominfo</p>
+        </div>
+
+        <!-- Grid container untuk semua kartu berita -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Kartu Berita 1 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden group">
+                <img src="assets/images/galeri-foto/1.jpeg" alt="Berita 1" class="w-full h-48 object-cover transform group-hover:scale-105 transition duration-300">
+                <div class="p-6">
+                    <p class="text-sm text-gray-500 mb-2">15 Agustus 2025</p>
+                    <h3 class="font-bold text-xl mb-3 text-gray-800 group-hover:text-blue-600 transition">Pemko Pekanbaru Kolaborasi Bersama BBPSDMP Kominfo Medan Gelar Pelatihan GTA 2025</h3>
+                    <p class="text-gray-600 mb-4 text-sm">Pemerintah Kota (Pemko) Pekanbaru berkolaborasi bersama Balai Besar Pengembangan Sumber Daya Manusia...</p>
+                    <a href="https://www.pekanbaru.go.id/p/news/pemko-pekanbaru-kolaborasi-bersama-bbpsdmp-kominfo-medan-gelar-pelatihan-gta-2025#" target="_blank" class="font-semibold text-blue-600 hover:underline">Baca Selengkapnya &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Kartu Berita 2 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden group">
+                <img src="assets/images/berita/berita3.jpg" alt="Berita 2" class="w-full h-48 object-cover transform group-hover:scale-105 transition duration-300">
+                <div class="p-6">
+                    <p class="text-sm text-gray-500 mb-2">04 Maret 2025</p>
+                    <h3 class="font-bold text-xl mb-3 text-gray-800 group-hover:text-blue-600 transition">Penataan Aplikasi Diskominfo Kota Madiun Dinilai Baik, Pemkot Pekanbaru Datang Untuk Studi Tiru</h3>
+                    <p class="text-gray-600 mb-4 text-sm">Dengan komitmen kuat untuk mendukung terwujudnya Smart City di Kota Madiun, Diskominfo telah menghadirkan...</p>
+                    <a href="https://madiuntoday.id/berita/2025/03/04/penataan-aplikasi-diskominfo-kota-madiun-dinilai-baik-pemkot-pekanbaru-datang-untuk-studi-tiru" target="_blank" class="font-semibold text-blue-600 hover:underline">Baca Selengkapnya &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Kartu Berita 3 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden group">
+                <img src="assets/images/berita/berita2.jpeg" alt="Berita 3" class="w-full h-48 object-cover transform group-hover:scale-105 transition duration-300">
+                <div class="p-6">
+                    <p class="text-sm text-gray-500 mb-2">10 Januari 2025</p>
+                    <h3 class="font-bold text-xl mb-3 text-gray-800 group-hover:text-blue-600 transition">Maisisco Ditunjuk Sebagai Plh Kadis Kominfo Pekanbaru</h3>
+                    <p class="text-gray-600 mb-4 text-sm">Pj Wali Kota Pekanbaru, Roni Rakhmat, resmi menunjuk H. Maisisco, S.Sos, M.Si, sebagai Pelaksana Harian (Plh) Kepala Dinas...</p>
+                    <a href="https://www.goriau.com/berita/baca/maisisco-ditunjuk-sebagai-plh-kadis-kominfo-pekanbaru.html" target="_blank" class="font-semibold text-blue-600 hover:underline">Baca Selengkapnya &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Kartu Berita 4 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden group">
+                <img src="assets/images/berita/berita4.jpeg" alt="Berita 4" class="w-full h-48 object-cover transform group-hover:scale-105 transition duration-300">
+                <div class="p-6">
+                    <p class="text-sm text-gray-500 mb-2">23 Dec 2024</p>
+                    <h3 class="font-bold text-xl mb-3 text-gray-800 group-hover:text-blue-600 transition">Dinas Kominfo bersama Wartawan Bukittinggi Kunjungi RRI Pekanbaru</h3>
+                    <p class="text-gray-600 mb-4 text-sm">Sebanyak 62 Wartawan bersama Dinas Kominfo Kota Bukittinggi mengikuti Study...</p>
+                    <a href="https://rri.co.id/bukittinggi/daerah/1210530/dinas-kominfo-bersama-wartawan-bukittinggi-kunjungi-rri-pekanbaru" target="_blank" class="font-semibold text-blue-600 hover:underline">Baca Selengkapnya &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Kartu Berita 5 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden group">
+                <img src="assets/images/berita/berita5.jpg" alt="Berita 5" class="w-full h-48 object-cover transform group-hover:scale-105 transition duration-300">
+                <div class="p-6">
+                    <p class="text-sm text-gray-500 mb-2"> 10 Januari 2025</p>
+                    <h3 class="font-bold text-xl mb-3 text-gray-800 group-hover:text-blue-600 transition">H. Maisisco Ditunjuk jadi Plh. Kepala Dinas Kominfotiksan Pekanbaru</h3>
+                    <p class="text-gray-600 mb-4 text-sm">Penjabat (Pj) Wali Kota Pekanbaru, Roni Rakhmat menunjuk H. Maisisco, S.Sos, M.Si, sebagai...</p>
+                    <a href="https://riausky.com/news/detail/81353/h-maisisco-ditunjuk-jadi-plh-kepala-dinas-kominfo-pekanbaru" target="_blank" class="font-semibold text-blue-600 hover:underline">Baca Selengkapnya &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Kartu Berita 6 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden group">
+                <img src="assets/images/berita/berita6.jpeg" alt="Berita 6" class="w-full h-48 object-cover transform group-hover:scale-105 transition duration-300">
+                <div class="p-6">
+                    <p class="text-sm text-gray-500 mb-2">23 Oktober 2024</p>
+                    <h3 class="font-bold text-xl mb-3 text-gray-800 group-hover:text-blue-600 transition">Perkuat Sinergitas, Pemko Pekanbaru dan LPP RRI Teken Perjanjian Kerja Sama</h3>
+                    <p class="text-gray-600 mb-4 text-sm">Pj Wali Kota Pekanbaru Risnandar Mahiwa yang diwakili Kepala Dinas Komunikasi, Informatika, Statistik dan Persandian...</p>
+                    <a href="https://www.pekanbaru.go.id/p/news/perkuat-sinergitas-pemko-pekanbaru-dan-lpp-rri-teken-perjanjian-kerja-sama-terkait-penyebarluasan-informasi" target="_blank" class="font-semibold text-blue-600 hover:underline">Baca Selengkapnya &rarr;</a>
+                </div>
+            </div>
+            
+            <!-- Kartu Berita 7 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden group">
+                <img src="assets/images/berita/berita7.jpeg" alt="Berita 7" class="w-full h-48 object-cover transform group-hover:scale-105 transition duration-300">
+                <div class="p-6">
+                    <p class="text-sm text-gray-500 mb-2">10 Januari 2025</p>
+                    <h3 class="font-bold text-xl mb-3 text-gray-800 group-hover:text-blue-600 transition">Tunjuk Maisisco Jadi Plh Kadis Kominfo Pekanbaru Gantikan Raja Hendra, Ini Pesan Pj Wako</h3>
+                    <p class="text-gray-600 mb-4 text-sm">Pj Walikota Pekanbaru, Roni Rakhmat, resmi menunjuk Maisisco...</p>
+                    <a href="https://halloriau.com/read-pekanbaru-14603417-2025-01-10-tunjuk-maisisco-jadi-plh-kadis-kominfo-pekanbaru-gantikan-raja-hendra-ini-pesan-pj-wako.html" target="_blank" class="font-semibold text-blue-600 hover:underline">Baca Selengkapnya &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Kartu Berita 8 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden group">
+                <img src="assets/images/berita/berita8.jpeg" alt="Berita 8" class="w-full h-48 object-cover transform group-hover:scale-105 transition duration-300">
+                <div class="p-6">
+                    <p class="text-sm text-gray-500 mb-2"> 21 Agustus 2025</p>
+                    <h3 class="font-bold text-xl mb-3 text-gray-800 group-hover:text-blue-600 transition">Pemko Pekanbaru Segera Luncurkan Aplikasi AMAN untuk Permudah Layanan Publik</h3>
+                    <p class="text-gray-600 mb-4 text-sm">Pemerintah Kota (Pemko) Pekanbaru menargetkan peluncuran aplikasi AMAN dalam waktu satu...</p>
+                    <a href="https://www.goriau.com/berita/baca/pemko-pekanbaru-segera-luncurkan-aplikasi-aman-untuk-permudah-layanan-publik.html" target="_blank" class="font-semibold text-blue-600 hover:underline">Baca Selengkapnya &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Kartu Berita 9 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden group">
+                <img src="assets/images/berita/berita9.jpeg" alt="Berita 9" class="w-full h-48 object-cover transform group-hover:scale-105 transition duration-300">
+                <div class="p-6">
+                    <p class="text-sm text-gray-500 mb-2">10 September 2024</p>
+                    <h3 class="font-bold text-xl mb-3 text-gray-800 group-hover:text-blue-600 transition">Gelar Serah Terima Jabatan, Diskominfotiksan Pekanbaru Menuju Peningkatan Kinerja</h3>
+                    <p class="text-gray-600 mb-4 text-sm">Dinas Komunikasi Informatika Statistik dan Persandian (Diskominfotiksan) Kota Pekanbaru menggelar serah terima...</p>
+                    <a href="https://www.pekanbaru.go.id/p/news/perkuat-sinergitas-pemko-pekanbaru-dan-lpp-rri-teken-perjanjian-kerja-sama-terkait-penyebarluasan-informasi" target="_blank" class="font-semibold text-blue-600 hover:underline">Baca Selengkapnya &rarr;</a>
+                </div>
+            </div>
+            
+            <!-- Kartu Berita 10 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden group">
+                <img src="assets/images/berita/berita10.jpg" alt="Berita 10" class="w-full h-48 object-cover transform group-hover:scale-105 transition duration-300">
+                <div class="p-6">
+                    <p class="text-sm text-gray-500 mb-2"> 07 Maret 2025</p>
+                    <h3 class="font-bold text-xl mb-3 text-gray-800 group-hover:text-blue-600 transition">Gantikan Maisisco , Firman Hadi Jabat Plt Kepala Diskominfo Pekanbaru</h3>
+                    <p class="text-gray-600 mb-4 text-sm">Jabatan Plt Kepala Dinas Komunikasi Informasi Statistik dan Persandian (Diskominfotiksan) Kota Pekanbaru dijabat...</p>
+                    <a href="https://kiblatriau.com/news/detail/26328/gantikan-maisisco--firman-hadi-jabat--plt-kepala-diskominfo-pekanbaru" target="_blank" class="font-semibold text-blue-600 hover:underline">Baca Selengkapnya &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Kartu Berita 11 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden group">
+                <img src="assets/images/berita/berita11.jpeg" alt="Berita 11" class="w-full h-48 object-cover transform group-hover:scale-105 transition duration-300">
+                <div class="p-6">
+                    <p class="text-sm text-gray-500 mb-2"> 23 Februari 2022</p>
+                    <h3 class="font-bold text-xl mb-3 text-gray-800 group-hover:text-blue-600 transition">Kominfo Pekanbaru Buka Pendaftaran Kerjasama Media Secara Online</h3>
+                    <p class="text-gray-600 mb-4 text-sm">Dalam rangka optimalisasi penyampaian pesan pembangunan kepada seluruh masyarakat dan dimulainya...</p>
+                    <a href="https://www.pekanbaru.go.id/p/news/kominfo-pekanbaru-buka-pendaftaran-kerjasama-media-secara-online" target="_blank" class="font-semibold text-blue-600 hover:underline">Baca Selengkapnya &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Kartu Berita 12 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden group">
+                <img src="assets/images/berita/berita12.jpeg" alt="Berita 12" class="w-full h-48 object-cover transform group-hover:scale-105 transition duration-300">
+                <div class="p-6">
+                    <p class="text-sm text-gray-500 mb-2">23 Juli 2024</p>
+                    <h3 class="font-bold text-xl mb-3 text-gray-800 group-hover:text-blue-600 transition">Sosialisasi Kemkominfo RI, Kepala Diskominfotiksan Paparkan Realisasi Call Center 112 di Pekanbaru</h3>
+                    <p class="text-gray-600 mb-4 text-sm">Kepala Dinas Komunikasi, Informasi, Statistik dan Persandian (Diskominfotiksan) Kota Pekanbaru, Raja Hendra Saputra menghadiri...</p>
+                    <a href="https://www.pekanbaru.go.id/p/news/sosialisasi-kemkominfo-ri-kepala-diskominfotiksan-paparkan-realisasi-call-center-112-di-pekanbaru" target="_blank" class="font-semibold text-blue-600 hover:underline">Baca Selengkapnya &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Kartu Berita 13 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden group">
+                <img src="assets/images/berita/berita13.jpeg" alt="Berita 13" class="w-full h-48 object-cover transform group-hover:scale-105 transition duration-300">
+                <div class="p-6">
+                    <p class="text-sm text-gray-500 mb-2"> 03 Juni 2022</p>
+                    <h3 class="font-bold text-xl mb-3 text-gray-800 group-hover:text-blue-600 transition">Kominfo Gelar VSGA di Pekanbaru, Firmansyah Eka Putra: Tingkatkan dan Kembangkan Potensi Siswa Menuju Dunia Kerja</h3>
+                    <p class="text-gray-600 mb-4 text-sm">BPSDMP Kominfo Regional Medan menggelar Vocational School Graduate Academy (VSGA) di Kota Pekanbaru selama 5 hari...</p>
+                    <a href="https://www.pekanbaru.go.id/p/news/kominfo-gelar-vsga-di-pekanbaru-firmansyah-eka-putra-tingkatkan-dan-kembangkan-potensi-siswa-menuju-dunia-kerja" target="_blank" class="font-semibold text-blue-600 hover:underline">Baca Selengkapnya &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Kartu Berita 14 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden group">
+                <img src="assets/images/berita/berita14.jpeg" alt="Berita 14" class="w-full h-48 object-cover transform group-hover:scale-105 transition duration-300">
+                <div class="p-6">
+                    <p class="text-sm text-gray-500 mb-2">08 Februari 2019</p>
+                    <h3 class="font-bold text-xl mb-3 text-gray-800 group-hover:text-blue-600 transition">Kominfo Gesa Pemasangan Jaringan Internet di Kantor Baru Walikota di Tenayan Raya</h3>
+                    <p class="text-gray-600 mb-4 text-sm">Dinas Komunikasi Informatika Statistik dan Persandian Kota Pekanbaru  saat ini menggesa pemasangan jaringan...</p>
+                    <a href="https://www.pekanbaru.go.id/p/news/kominfo-pekanbaru-buka-pendaftaran-kerjasama-media-secara-online" target="_blank" class="font-semibold text-blue-600 hover:underline">Baca Selengkapnya &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Kartu Berita 15 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden group">
+                <img src="assets/images/berita/berita15.jpg" alt="Berita 15" class="w-full h-48 object-cover transform group-hover:scale-105 transition duration-300">
+                <div class="p-6">
+                    <p class="text-sm text-gray-500 mb-2">20 Februari 2018</p>
+                    <h3 class="font-bold text-xl mb-3 text-gray-800 group-hover:text-blue-600 transition">Kadis Kominfo Payakumbuh Terkesan Dengan Aplikasi EKA</h3>
+                    <p class="text-gray-600 mb-4 text-sm">Kepala  Dinas (Kadis) Komunikasi Informatika, Statistik dan Persandian Kota Pekanbaru Firmansyah Eka Putra, ST, MT  menerima kujungan...</p>
+                    <a href="https://www.pekanbaru.go.id/p/news/4093-kadis-kominfo-payakumbuh-terkesan-dengan-aplikasi-eka" target="_blank" class="font-semibold text-blue-600 hover:underline">Baca Selengkapnya &rarr;</a>
+                </div>
+            </div>
+
+        </div> <!-- Penutup Grid container -->
+</section>
+    </div>
+</main>
+
+<footer class="bg-[#003E54] text-white">
+    <div class="container mx-auto px-6 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+            <!-- Kolom 1: Info & Alamat -->
+            <div>
+                <div class="flex items-center space-x-4 mb-4 justify-center md:justify-start">
+                    <img src="assets/images/logo.png" alt="Logo" class="h-12 w-12" onerror="this.onerror=null;this.src='https://placehold.co/48x48/003E54/FFFFFF?text=Logo';">
+                    <div>
+                        <p class="font-semibold text-sm leading-tight">Dinas Komunikasi Informatika Statistik dan Persandian</p>
+                        <p class="text-xs leading-tight">Pemerintah Kota Pekanbaru</p>
+                    </div>
+                </div>
+                <p class="text-gray-400 mt-2 text-sm">Komplek Perkantoran Walikota Pekanbaru, Jalan Abdul Rahman Hamid, Kelurahan Tuah Negeri Kecamatan Tenayan Raya</p>
+            </div>
+            <!-- Kolom 2: Tautan Terkait -->
+            <div>
+                <h3 class="font-bold text-lg mb-4">Tautan Terkait</h3>
+                <ul class="text-sm">
+                    <li class="mb-2"><a href="https://www.pekanbaru.go.id/" target="_blank" class="text-gray-400 hover:text-white">Pemerintah Kota Pekanbaru</a></li>
+                </ul>
+            </div>
+            <!-- Kolom 3: Ikuti Kami -->
+            <div>
+                <h3 class="font-bold text-lg mb-4">Ikuti Kami</h3>
+                <div class="flex space-x-4 justify-center md:justify-start">
+                    <a href="https://www.facebook.com/dinas.kominfo.kota.pekanbaru" target="_blank" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f fa-lg"></i></a>
+                    <a href="https://x.com/diskominfopku" target="_blank" class="text-gray-400 hover:text-white"><i class="fab fa-twitter fa-lg"></i></a>
+                    <a href="https://www.instagram.com/pemkopku/" target="_blank" class="text-gray-400 hover:text-white"><i class="fab fa-instagram fa-lg"></i></a>
+                    <a href="https://www.youtube.com/channel/UCKXP3eT9Y1nEnymlKbMQhxw" target="_blank" class="text-gray-400 hover:text-white"><i class="fab fa-youtube fa-lg"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-500 text-sm">
+            <p>&copy; 2025 Diskominfo Kota Pekanbaru. Hak Cipta Dilindungi.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

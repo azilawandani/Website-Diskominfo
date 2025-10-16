@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas & Fungsi - Diskominfo Kota Pekanbaru</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="bg-white">
+
+<!-- HEADER UNTUK HALAMAN DI DALAM SUB-FOLDER -->
+<header class="bg-[#003E54] text-white shadow-md sticky top-0 z-50">
+    <!-- Ornamen Border Atas -->
+    <div class="ornament-border"></div>
+
+    <div class="container mx-auto px-6 py-2 flex justify-between items-center">
+        <a href="../index.html" class="flex items-center space-x-4">
+            <img src="../assets/images/logo.png" alt="Logo" class="h-12 w-12" onerror="this.onerror=null;this.src='https://placehold.co/48x48/003E54/FFFFFF?text=Logo';">
+            <div class="hidden md:block">
+                <p class="font-semibold text-sm leading-tight">Dinas Komunikasi Informatika Statistik dan Persandian</p>
+                <p class="text-xs leading-tight">Pemerintah Kota Pekanbaru</p>
+            </div>
+        </a>
+        <nav class="hidden md:flex items-center space-x-6 text-sm">
+            <a href="../index.html" class="hover:text-yellow-400 transition duration-300">Beranda</a>
+            <div class="relative" id="profil-dropdown-container">
+                <button id="profile-dropdown-button" class="hover:text-yellow-400 transition duration-300 flex items-center">
+                    Profil
+                    <i class="fas fa-chevron-down ml-2 text-xs"></i>
+                </button>
+                <div id="profile-dropdown-menu" class="absolute right-0 mt-2 w-56 bg-white rounded-md shadow-lg py-2 z-20 hidden">
+                    <a href="sejarah.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Sejarah</a>
+                    <a href="visi-misi.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Visi & Misi</a>
+                    <a href="struktur-organisasi.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Struktur Organisasi</a>
+                    <a href="tugas-fungsi.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Tugas & Fungsi</a>
+                </div>
+            </div>
+            <a href="../berita.html" class="hover:text-yellow-400 transition duration-300">Berita</a>
+            <div class="relative" id="galeri-dropdown-container">
+                <button id="galeri-dropdown-button" class="hover:text-yellow-400 transition duration-300 flex items-center">
+                    Galeri
+                    <i class="fas fa-chevron-down ml-2 text-xs"></i>
+                </button>
+                <div id="galeri-dropdown-menu" class="absolute right-0 mt-2 w-56 bg-white rounded-md shadow-lg py-2 z-20 hidden">
+                    <a href="../galeri.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Galeri Foto</a>
+                    <a href="../galeri-pages/video.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Galeri Video</a>
+                </div>
+            </div>
+            <a href="../kontak.html" class="hover:text-yellow-400 transition duration-300">Kontak</a>
+        </nav>
+        <div class="md:hidden">
+            <button id="mobile-menu-button" class="focus:outline-none">
+                <i class="fas fa-bars fa-lg"></i>
+            </button>
+        </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-[#003E54] px-6 pb-4">
+        <a href="../index.html" class="block py-2 hover:text-yellow-400">Beranda</a>
+        <span class="block py-2 text-yellow-400 font-bold">Profil</span>
+        <a href="sejarah.html" class="block py-2 pl-4 text-sm hover:text-yellow-400">Sejarah</a>
+        <a href="visi-misi.html" class="block py-2 pl-4 text-sm hover:text-yellow-400">Visi & Misi</a>
+        <a href="struktur-organisasi.html" class="block py-2 pl-4 text-sm hover:text-yellow-400">Struktur Organisasi</a>
+        <a href="tugas-fungsi.html" class="block py-2 pl-4 text-sm hover:text-yellow-400">Tugas & Fungsi</a>
+        <a href="../berita.html" class="block py-2 hover:text-yellow-400">Berita</a>
+        <span class="block py-2 text-yellow-400 font-bold">Galeri</span>
+        <a href="../galeri.html" class="block py-2 pl-4 text-sm hover:text-yellow-400">Galeri Foto</a>
+        <a href="../galeri-pages/video.html" class="block py-2 pl-4 text-sm hover:text-yellow-400">Galeri Video</a>
+        <a href="../kontak.html" class="block py-2 hover:text-yellow-400">Kontak</a>
+    </div>
+</header>
+
+
+
+
+
+
+
+<main class="py-16 bg-gray-50">
+    <div class="container mx-auto px-6 max-w-4xl">
+        <div class="bg-white p-8 md:p-12 rounded-lg shadow-lg">
+
+            <div class="text-center mb-8">
+                <!-- Ornamen Atas -->
+                <div class="ornament-border inline-block w-full"></div>
+                <!-- Judul Halaman -->
+                <h1 class="text-4xl font-bold text-gray-800 py-4">Tugas & Fungsi</h1>
+                <!-- Ornamen Bawah -->
+                <div class="ornament-border inline-block w-full"></div>
+            </div>
+
+            <div class="prose max-w-none text-gray-700">
+                <div>
+                    <h2 class="text-2xl font-bold text-center text-[#002c3a]">Tugas</h2>
+                    <p>
+                        Dinas mempunyai tugas membantu walikota merumuskan dan menetapkan rencana operasional, merumuskan dan menetapkan umsan pemerintahaan bidang komunikasi informatika statistik dan persandian berdasarkan ketentuan peraturan perundang-undangan
+                    </p>
+                </div>
+
+                <h2 class="text-2xl font-bold text-center text-[#002c3a]">Fungsi</h2>
+                    <ul class="list-decimal pl-5 space-y-2">
+                        <li>perumusan dan penetapan rencana operasional urusan   pemerintahan bidang komunikasi, informatika, statistik dan persandian berdasarkan ketentuan peraturan perundang-undangan.</li>
+                        <li> perumusan dan penetapan rencana operasional urusan pemerintahan bidang statistik.</li>
+                        <li> Frumusan dan penetapan rencana operasional urusan pemerintahan bidang layanan informasi dan komunikasi publik.</li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Footer -->
+<footer class="bg-[#003E54] text-white">
+    <div class="container mx-auto px-6 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+            <!-- Kolom 1: Info & Alamat -->
+            <div>
+                <div class="flex items-center space-x-4 mb-4 justify-center md:justify-start">
+                    <img src="assets/images/logo.png" alt="Logo" class="h-12 w-12" onerror="this.onerror=null;this.src='https://placehold.co/48x48/003E54/FFFFFF?text=Logo';">
+                    <div>
+                        <p class="font-semibold text-sm leading-tight">Dinas Komunikasi Informatika Statistik dan Persandian</p>
+                        <p class="text-xs leading-tight">Pemerintah Kota Pekanbaru</p>
+                    </div>
+                </div>
+                <p class="text-gray-400 mt-2 text-sm">Komplek Perkantoran Walikota Pekanbaru, Jalan Abdul Rahman Hamid, Kelurahan Tuah Negeri Kecamatan Tenayan Raya</p>
+            </div>
+            <!-- Kolom 2: Tautan Terkait -->
+            <div>
+                <h3 class="font-bold text-lg mb-4">Tautan Terkait</h3>
+                <ul class="text-sm">
+                    <li class="mb-2"><a href="https://www.pekanbaru.go.id/" target="_blank" class="text-gray-400 hover:text-white">Pemerintah Kota Pekanbaru</a></li>
+                </ul>
+            </div>
+            <!-- Kolom 3: Ikuti Kami -->
+            <div>
+                <h3 class="font-bold text-lg mb-4">Ikuti Kami</h3>
+                <div class="flex space-x-4 justify-center md:justify-start">
+                    <a href="https://www.facebook.com/dinas.kominfo.kota.pekanbaru" target="_blank" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f fa-lg"></i></a>
+                    <a href="https://x.com/diskominfopku" target="_blank" class="text-gray-400 hover:text-white"><i class="fab fa-twitter fa-lg"></i></a>
+                    <a href="https://www.instagram.com/pemkopku/" target="_blank" class="text-gray-400 hover:text-white"><i class="fab fa-instagram fa-lg"></i></a>
+                    <a href="https://www.youtube.com/channel/UCKXP3eT9Y1nEnymlKbMQhxw" target="_blank" class="text-gray-400 hover:text-white"><i class="fab fa-youtube fa-lg"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-500 text-sm">
+            <p>&copy; 2025 Diskominfo Kota Pekanbaru. Hak Cipta Dilindungi.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
